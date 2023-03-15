@@ -1,0 +1,148 @@
+<!-- /**
+  |============================
+  | BACKDROP
+  |============================
+*/ -->
+<div class="js-backdrop-modal">
+  <!-- Store Modal -->
+
+  <div class="modal-order-flowers modal" data-modal="1">
+    <button type="button" class="button-modal-close js-modal-close">
+      <svg class="icon-close-store">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="title-modal-flowers">Contact us</h3>
+    <p class="title-item-flower">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="form-flower">
+      <label for="name" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="name"
+            class="input-flower input"
+            placeholder="Your name"
+            type="text"
+            name="username"
+            minlength="3"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Name</span>
+        </span></label
+      >
+      <label for="email" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="email"
+            class="input-flower input"
+            type="email"
+            name="email"
+            title="Please enter your email"
+            placeholder="Your email"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Email</span>
+        </span>
+      </label>
+      <button type="submit" id="simulate"></button>
+      <button
+        type="button"
+        class="button-send-modal js-open-modal"
+        data-modal="3"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div class="subscribe-modal modal" data-modal="2">
+    <button class="close-button js-modal-close" type="button">
+      <svg class="modal-close-icon" width="18" height="18">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-bgc"></div>
+    <form class="subscribe-form">
+      <b class="modal-title">Follow&nbsp;to&nbsp;our&nbsp;newsletter</b>
+      <p class="modal-text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+
+      <label class="subscribe-formfield">
+        <span class="input-wrapper">
+          <input
+            class="subscribe-input input input-js"
+            type="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="./img/icons.svg#success-logo"></use>
+          </svg>
+
+          <span class="label-name">Email</span>
+        </span>
+      </label>
+
+      <button class="subscribe-button button button-js" type="submit">
+        Subscribe
+      </button>
+    </form>
+  </div>
+
+  <div class="modal-thank modal" data-modal="3">
+    <button type="button" class="button-modal-close js-modal-close">
+      <svg class="icon-close-store">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture class="modal-photo-thank">
+      <source
+        media="(min-width:720px)"
+        srcset="
+          ./img/modal-1/img_desktop-tablet@1x.png 1x,
+          ./img/modal-1/img_desktop-tablet@1x.png 2x
+        "
+        type="image/png"
+        width="367"
+      />
+      <img
+        loading="lazy"
+        srcset="
+          ./img/modal-1/img_mob@1x.png 1x,
+          ./img/modal-1/img_mob@2x.png 2x
+        "
+        src="./img/modal-1/img_mob@1x.png"
+        alt="Flower"
+        width="188"
+      />
+    </picture>
+    <h3 class="title-thank">Thank you!</h3>
+    <p class="title-item-thank">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button type="button" class="button-continue button-modal-send">
+      Continue
+    </button>
+  </div>
+</div>

@@ -1,0 +1,161 @@
+.header {
+  position: fixed;
+  top: 16px;
+  z-index: 100;
+  width: 100%;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .header{
+    top: 24px;
+    justify-content: space-between;}
+}
+
+@media screen and (min-width: 1280px) {
+  .header{
+    top: 28px;
+    justify-content: space-between;} }
+
+.header-container {
+  max-width: 432px;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: linear-gradient(112deg, rgba(152,148,145,0.6) 0%, rgba(149,145,142,0.5888480392156863) 60%);
+  border-radius: 5px;
+  animation: changeColor 1s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container{
+    max-width: 720px;
+    padding: 0 24px;
+    justify-content: space-between;
+    animation: changeColor 1s ease-in-out;}
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container{
+    max-width: 1232px;
+    justify-content: space-between;
+    animation: changeColor 5s ease-in-out;}
+}
+
+.header-contact{
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact{
+    margin-left: 0} }
+
+.mobil-meny{
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-meny{
+    display: none;} }
+
+.header-nav {
+  display: none;
+  align-items: center;
+  gap: 48px;
+}
+
+@media screen and (min-width:1280px) {
+  .header-link{
+  animation: color-change 2000ms ease-out both;}
+}
+
+@media screen and (min-width:768px) {
+  .header-link{
+    animation: color-change 2000ms ease-out both;}
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav{
+    display: flex;
+    width: 469px;
+    gap: 24px;}
+}
+
+@media screen and (min-width: 1280px) {
+  .header-nav{
+    width: 565px;
+    gap: 48px;}
+}
+
+.icon-logo{
+  width: 45px ;
+  height: 35px;
+  animation: color-change 500ms ease-out both;
+}
+
+
+@media screen and (min-width: 768px) {
+  .icon-logo{
+    display: none;}
+}
+
+.icon-logo-big{
+display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-logo-big{
+    animation: color-change 1000ms ease-out both;
+    display: block;
+    width: 72px ;
+    height: 57px;}
+}
+@media screen and (min-width:1280px) {
+  .icon-logo-big{animation: color-change 1000ms ease-out both;}
+}
+
+.icon-tel{
+  width: 22px;
+  height: 22px;
+  animation: color-change 1000ms ease-out both;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-tel{
+    animation: color-change 1000ms ease-out both;
+    width: 24px;
+    height: 24px;}
+}
+
+@media screen and (min-width: 1280px) {
+  .icon-tel{
+    animation: color-change 1000ms ease-out both;
+    width: 28px;
+    height: 28px;}
+}
+
+.icon-mobil-menu{
+  width: 24px;
+  height: 24px;
+  animation: color-change 1000ms ease-out both;
+}
+
+
+
+@keyframes color-change {
+  from {
+    color: black;
+    fill: black;}
+  to {
+    color: #fff;
+    fill: #fff;}
+}
+
+@keyframes changeColor {
+  0% {background:linear-gradient(112deg, rgba(152,148,145,0) 0%, rgba(149,145,142,0) 60%);}
+  50% {background: linear-gradient(112deg, rgba(152,148,145,0) 0%, rgba(149,145,142,0) 60%);}
+  100% {background: linear-gradient(112deg, rgba(152,148,145,0.5) 0%, rgba(149,145,142,0.5) 60%);}
+}
+

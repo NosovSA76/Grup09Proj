@@ -1,0 +1,51 @@
+.button-blog {
+  padding: 8px 39.5px;
+  font-size: 18px;
+}
+
+.button-store {
+  padding: 10px 35px;
+  font-size: 20px;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #e86f54;
+  border-radius: 38px;
+  display: block;
+  margin: auto;
+  line-height: 24px;
+  font-weight: 500;
+  transform: scale(1);
+  transition: background-color 250ms linear, box-shadow 250ms linear,
+    transform 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 28px;
+  }
+  .button-blog {
+    padding: 20px 69.5px;
+  }
+  .button-store {
+    padding: 20px 43.5px;
+  }
+}
+
+.button:hover {
+  background-color: #e25b41;
+
+  transform: scale(1.1);
+
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:focus {
+  background-color: #fa6f54;
+
+  transform: scale(1.1);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

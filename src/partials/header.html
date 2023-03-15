@@ -1,13 +1,61 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <section class="header-container">
+    <a class="header-logo" href="#anemon">
+      <svg class="icon-logo">
+        <use href="./img/icons.svg#Logo-mobil"></use>
+      </svg>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <svg class="icon-logo-big">
+        <use href="./img/icons.svg#logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header-nav">
+      <a class="header-link" href="#anemon">Anemone</a>
+      <a class="header-link" href="#About">About us</a>
+      <a class="header-link" href="#store">Store</a>
+      <a class="header-link" href="#Delivery">Delivery</a>
+      <a class="header-link" href="#Blog">Blog</a>
+    </nav>
+
+    <a class="header-contact" href="tel:+380631234567">
+      <svg class="icon-tel">
+        <use href="./img/icons.svg#tel"></use>
+      </svg>
+    </a>
+
+    <button class="mobil-meny js-open-menu" type="button">
+      <svg class="icon-mobil-menu">
+        <use href="./img/icons.svg#icon-Burger"></use>
+      </svg>
+    </button>
+  </section>
+  <!-- modal phone -->
+</header>
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu" type="button" id="close">
+    <svg class="menu-icon" width="12px" height="12px">
+      <use href="./img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#anemon" class="mobile-menu-link">Anemone</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#About" class="mobile-menu-link">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#store" class="mobile-menu-link mob-link">Store</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#Delivery" class="mobile-menu-link mob-link">Delivery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#Blog" class="mobile-menu-link mob-link">Blog</a>
       </li>
     </ul>
   </nav>
-</header>
+</div>

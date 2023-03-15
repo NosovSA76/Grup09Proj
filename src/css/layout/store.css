@@ -1,0 +1,142 @@
+@media screen and (min-width: 768px) {
+  .title-item-flower {
+    font-size: 16px;
+  }
+}
+
+.store-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .store-container {
+    min-width: 320px;
+  }
+}
+
+.store-list {
+  max-width: 288px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .store-list {
+    max-width: 768px;
+    column-gap: 32px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .store-list {
+    max-width: 1280px;
+    column-gap: 32px;
+    row-gap: 64px;
+  }
+}
+
+.item-img {
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .item-img {
+    margin-bottom: 16px;
+    max-width: 600px;
+  }
+}
+
+.store-subtitle {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .store-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
+
+  .store-subtitle::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .store-subtitle {
+    margin-bottom: 4px;
+    font-size: 36px;
+  }
+}
+
+.store-text {
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .store-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .store-text {
+    font-size: 28px;
+  }
+}
+
+.uk-child-width-1-3\@m>*{
+width: 600px;
+}
+.uk-child-width-1-3\@m>*{
+  width: 1280px;
+}
+
+#first{
+  margin-bottom: 12px;
+  padding: 0;
+  width: 136px;
+}
+
+.item-img {
+
+}
+ /* a:active {
+    color: currentColor; /* Цвет активных ссылок */
+   /* }
+  #second:hover, #second:focus {
+    color: currentColor; /* Цвет активных ссылок
+    /* text-decoration: none;
+   }*/
+#second:hover, #second:focus {
+outline: 1 px solid;
+}
+
+@media screen and (min-width: 768px) {
+  #first {
+    margin-bottom: 16px;
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #first {
+    margin-bottom: 16px;
+   width: 600px;
+  }
+}

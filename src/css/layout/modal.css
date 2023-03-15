@@ -1,0 +1,341 @@
+/**
+  |============================
+  | Backdrop
+  |============================
+*/
+.js-backdrop-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.js-backdrop-modal.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Subscribe Modal */
+
+.subscribe-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 272px;
+  transform: translate(-50%, -50%) scale(0.7);
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    transform 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-modal {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subscribe-modal {
+    display: flex;
+    width: 860px;
+  }
+}
+
+.modal.active,
+.modal3.active {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal-bgc {
+  width: 100%;
+  height: 121px;
+
+  background: url(../../img/modal-2/img_mob@1x.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-bgc {
+    background: url(../../img/modal-2/img_mob@2x.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-bgc {
+    height: 271px;
+    background: url(../../img/modal-2/img_tab@1x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-bgc {
+      background: url(../../img/modal-2/img_tab@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-bgc {
+    width: 428px;
+    height: auto;
+    background: url(../../img/modal-2/img_desktop@1x.jpg);
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-bgc {
+      background: url(../../img/modal-2/img_desktop@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .close-button {
+    top: 28px;
+    right: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .close-button {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-close-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.subscribe-form {
+  padding: 18px 16px 28px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    padding: 28px 118px 40px 118px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subscribe-form {
+    padding: 111px 40px 112px 40px;
+  }
+}
+
+.modal-title {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 19px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-title {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+}
+
+.modal-text {
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #5c5c5c;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-text {
+    width: 336px;
+    margin: 0 auto 32px auto;
+    font-size: 16px;
+  }
+}
+
+.subscribe-formfield {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-formfield {
+    width: 336px;
+    margin: 0 auto 28px auto;
+    padding-top: 25px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.subscribe-input {
+  display: block;
+  width: 100%;
+  padding: 10px 44px 10px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    padding: 16px 44px 16px 12px;
+    font-size: 14px;
+  }
+}
+
+.input::placeholder {
+  font-size: 12px;
+  color: #d7d7d7;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input::placeholder {
+    font-size: 14px;
+  }
+}
+
+.input:focus {
+  color: #111111;
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.input:focus:valid {
+  border-color: #3cbc81;
+}
+
+.input:focus:invalid {
+  border-color: #e74a3b;
+}
+
+.input:focus:placeholder-shown {
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.valid-logo {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.input:focus:invalid + .error-logo.valid-logo,
+.input:focus:valid ~ .success-logo.valid-logo {
+  opacity: 1;
+}
+
+.input:focus:placeholder-shown + .error-logo.valid-logo,
+.input:focus:placeholder-shown ~ .success-logo.valid-logo {
+  opacity: 0;
+}
+
+.label-name {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  color: #5c5c5c;
+  transition: color 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .label-name {
+    top: -25px;
+    font-size: 14px;
+  }
+}
+
+.input:focus:valid ~ .label-name {
+  color: #3cbc81;
+}
+
+.input:focus:invalid ~ .label-name {
+  color: #e74a3b;
+}
+
+.input:focus:placeholder-shown ~ .label-name {
+  color: #5c5c5c;
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  background-color: #e86f54;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 250ms linear;
+}
+
+.subscribe-button:disabled,
+.subscribe-form:invalid .subscribe-button {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-button {
+    display: block;
+    width: 336px;
+    margin: 0 auto;
+    padding: 14px 0;
+    font-size: 18px;
+  }
+}
+
+.subscribe-button:hover {
+  background-color: #e25b41;
+  transform: none;
+  box-shadow: none;
+}
+
+.subscribe-button:focus {
+  background-color: #fa6f54;
+  transform: none;
+  box-shadow: none;
+}
