@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Grup09Proj/assets/favicon-454beee3.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Added 'Montserrat' font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Added 'Inter' font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css"
+    />
+    <!-- Added 'Slider' stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <title>Project_09_01</title>
+
+    <!-- Base Styles -->
+
+    
+    <script type="module" crossorigin src="/Grup09Proj/assets/index-8df5638b.js"></script>
+    <link rel="stylesheet" href="/Grup09Proj/assets/index-c2e92e8b.css">
+  </head>
+
+  <body>
+    <!-- Loads the specified .html file -->
+
+    <header class="header">
+  <section class="header-container">
+    <a class="header-logo" href="#anemon">
+      <svg class="icon-logo">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#Logo-mobil"></use>
+      </svg>
+
+      <svg class="icon-logo-big">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header-nav">
+      <a class="header-link" href="#anemon">Anemone</a>
+      <a class="header-link" href="#About">About us</a>
+      <a class="header-link" href="#store">Store</a>
+      <a class="header-link" href="#Delivery">Delivery</a>
+      <a class="header-link" href="#Blog">Blog</a>
+    </nav>
+
+    <a class="header-contact" href="tel:+380631234567">
+      <svg class="icon-tel">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#tel"></use>
+      </svg>
+    </a>
+
+    <button class="mobil-meny js-open-menu" type="button">
+      <svg class="icon-mobil-menu">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-Burger"></use>
+      </svg>
+    </button>
+  </section>
+  <!-- modal phone -->
+</header>
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu" type="button" id="close">
+    <svg class="menu-icon" width="12px" height="12px">
+      <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#anemon" class="mobile-menu-link">Anemone</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#About" class="mobile-menu-link">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#store" class="mobile-menu-link mob-link">Store</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#Delivery" class="mobile-menu-link mob-link">Delivery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#Blog" class="mobile-menu-link mob-link">Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+    <main>
+      <section class="hero" id="anemon">
+  <div class="hero-container">
+    <h1 class="hero-title">ANEMONE</h1>
+    <p class="hero-badge">flower studio</p>
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
+      <span class="arrow-div">
+        <svg class="btn-arrow-mobil" width="28" height="28">
+          <use id="btn-arrow" href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-arrow-mobil"></use>
+        </svg>
+      </span>
+      <svg class="btn-text-mobil" width="76" height="76">
+        <use id="btn-txt" href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-text-mobil"></use>
+      </svg>
+
+      <span class="arrow-div">
+        <svg class="btn-arrow-tabl" width="58" height="58">
+          <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-arrow-tabl"></use>
+        </svg>
+      </span>
+      <svg class="btn-text-tabl" width="145" height="150">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-text-tabl"></use>
+      </svg>
+
+      <svg class="hero-btn-svg">
+        <use class="btn-text" href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-txt"></use>
+        <use class="btn-arrow" href="/Grup09Proj/assets/icons-8ba3c3c3.svg#btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-shape">
+    <img
+      class="hero-img"
+      loading="lazy"
+      srcset="/Grup09Proj/assets/img_mob@1x-0f21044a.jpg 1x, /Grup09Proj/assets/img_mob@2x-db47dd6e.jpg 2x"
+      src="/Grup09Proj/assets/img_mob@1x-0f21044a.jpg"
+      alt="Flower studio preview"
+    />
+    <img
+      loading="lazy"
+      srcset="/Grup09Proj/assets/img_tab@1x-5f2d90d7.jpg 1x, /Grup09Proj/assets/img_tab@2x-5baf40a9.jpg 2x"
+      class="hero-img-tabl"
+      src="/Grup09Proj/assets/img_tab@1x-5f2d90d7.jpg"
+      alt="Flower studio preview"
+    />
+    <img
+      loading="lazy"
+      class="hero-img-laptop"
+      srcset="/Grup09Proj/assets/img_desktop@1x-2d3a4b90.jpg 1x, /Grup09Proj/assets/img_desktop@2x-b8f77649.jpg 2x"
+      src="/Grup09Proj/assets/img_desktop@1x-2d3a4b90.jpg"
+      alt="Flower studio preview"
+    />
+  </div>
+</section>
+
+      <section class="section" id="About">
+  <div class="conteiner">
+    <h2 class="section-title">About</h2>
+    <ul class="flow">
+      <li class="flo">
+        <p class="flowers">
+          We are a minimalistic flower studio. We love people and flowers.
+          Therefore, every day we give people the beauty and joy creating
+          stylish and modern masterpieces. Every bouquet we create is unique as
+          you are.
+        </p>
+      </li>
+      <li>
+        <picture class="flowers-img">
+          <source
+            srcset="/Grup09Proj/assets/img_desktop@1x-3beb3ec6.jpg 1x, /Grup09Proj/assets/img_desktop@2x-d4ddfe05.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/Grup09Proj/assets/img_tab@1x-71787a6a.jpg 1x, /Grup09Proj/assets/img_tab@2x-f336163b.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/Grup09Proj/assets/img_mob@1x-d3632135.jpg 1x, /Grup09Proj/assets/img_mob@2x-a8882d73.jpg 2x"
+            media="(min-width: 280px)"
+          />
+          <img
+            loading="lazy"
+            class="flowers-img"
+            alt="flowers"
+            srcset="/Grup09Proj/assets/img_mob@2x-a8882d73.jpg "
+            src="/Grup09Proj/assets/img_mob@1x-d3632135.jpg"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section" id="store">
+  <div class="conteiner store-container">
+    <h2 class="section-title">Store</h2>
+    <div
+      class="uk-child-width-1-3@m store-list"
+      uk-grid
+      uk-lightbox="animation: scale"
+    >
+      <div id="first">
+        <a
+          id="second"
+          class="uk-inline"
+          href="./img/store/img1_desktop@2x.jpg"
+          data-caption="Compliments"
+        >
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width:1280px)"
+              srcset="/Grup09Proj/assets/img1_desktop@1x-bb3ec9ef.jpg 1x, /Grup09Proj/assets/img1_desktop@2x-06e94480.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Tablet screen -->
+            <source
+              media="(min-width:768px)"
+              srcset="/Grup09Proj/assets/img1_tab@1x-1a9422f4.jpg 1x, /Grup09Proj/assets/img1_tab@2x-9922e83d.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Base and Mobile secreen -->
+            <img
+              class="item-img"
+              loading="lazy"
+              srcset="/Grup09Proj/assets/img1_mob@1x-92a9fc83.jpg 1x, /Grup09Proj/assets/img1_mob@2x-6d4e7ec5.jpg 2x"
+              src="/Grup09Proj/assets/img1_mob@1x-92a9fc83.jpg"
+              alt="Orange Flowers"
+            />
+          </picture>
+          <h3 class="store-subtitle">compliments</h3>
+          <p class="store-text">from &dollar;15</p>
+        </a>
+      </div>
+      <div id="first">
+        <a
+          id="second"
+          class="uk-inline"
+          href="./img/store/img2_desktop@2x.jpg"
+          data-caption="bouquets&nbsp;size&nbsp;S"
+        >
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width:1280px)"
+              srcset="/Grup09Proj/assets/img2_desktop@1x-d5b81db3.jpg 1x, /Grup09Proj/assets/img2_desktop@2x-85559e1a.jpg 2x"
+              type="image/jpg"
+            />
+
+            <!-- Tablet screen -->
+            <source
+              media="(min-width:768px)"
+              srcset="/Grup09Proj/assets/img2_tab@1x-c84e2514.jpg 1x, /Grup09Proj/assets/img2_tab@2x-9db585f1.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Base and Mobile secreen -->
+            <img
+              class="item-img"
+              loading="lazy"
+              srcset="/Grup09Proj/assets/img2_mob@1x-8fc7b0b8.jpg 1x, /Grup09Proj/assets/img2_mob@2x-6f135302.jpg 2x"
+              src="../img/store/img2_mob@1x.jpg"
+              alt="Flowers in White Wrap"
+            />
+          </picture>
+          <h3 class="store-subtitle">bouquets&nbsp;size&nbsp;S</h3>
+          <p class="store-text">from &dollar;25</p>
+        </a>
+      </div>
+      <div id="first">
+        <a
+          id="second"
+          class="uk-inline"
+          href="./img/store/img3_desktop@2x.jpg"
+          data-caption="bouquets&nbsp;size&nbsp;M"
+        >
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width:1280px)"
+              srcset="/Grup09Proj/assets/img3_desktop@1x-c8e9a06e.jpg 1x, /Grup09Proj/assets/img3_desktop@2x-45bb8cf5.jpg 2x"
+              type="image/jpg"
+            />
+
+            <!-- Tablet screen -->
+            <source
+              media="(min-width:768px)"
+              srcset="/Grup09Proj/assets/img3_tab@1x-97cb4d5e.jpg 1x, /Grup09Proj/assets/img3_tab@2x-30955172.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Base and Mobile secreen -->
+            <img
+              class="item-img"
+              loading="lazy"
+              srcset="/Grup09Proj/assets/img3_mob@1x-87856d07.jpg 1x, /Grup09Proj/assets/img3_mob@2x-df903518.jpg 2x"
+              src="/Grup09Proj/assets/img3_mob@1x-87856d07.jpg"
+              alt="Turquoise Flowers"
+            />
+          </picture>
+          <h3 class="store-subtitle">bouquets&nbsp;size&nbsp;M</h3>
+          <p class="store-text">from &dollar;45</p>
+        </a>
+      </div>
+      <div id="first">
+        <a
+          id="second"
+          class="uk-inline"
+          href="./img/store/img4_desktop@2x.jpg"
+          data-caption="bouquets&nbsp;size&nbsp;L"
+        >
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width:1280px)"
+              srcset="/Grup09Proj/assets/img4_desktop@1x-35940e68.jpg 1x, /Grup09Proj/assets/img4_desktop@2x-9b7d11bc.jpg 2x"
+              type="image/jpg"
+            />
+
+            <!-- Tablet screen -->
+            <source
+              media="(min-width:768px)"
+              srcset="/Grup09Proj/assets/img4_tab@1x-cd1a5eff.jpg 1x, /Grup09Proj/assets/img4_tab@2x-ccf55ce5.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Base and Mobile secreen -->
+            <img
+              class="item-img"
+              loading="lazy"
+              srcset="/Grup09Proj/assets/img4_mob@1x-4a63d5b6.jpg 1x, /Grup09Proj/assets/img4_mob@2x-48c39045.jpg 2x"
+              src="/Grup09Proj/assets/img4_mob@1x-4a63d5b6.jpg"
+              alt="Beige Flowers"
+            />
+          </picture>
+          <h3 class="store-subtitle">bouquets&nbsp;size&nbsp;L</h3>
+          <p class="store-text">from &dollar;60</p>
+        </a>
+      </div>
+    </div>
+    <button class="button button-store" type="button" id="imitation">
+      Order flowers
+    </button>
+  </div>
+</section>
+
+      <section class="section" id="Delivery">
+  <div class="conteiner">
+    <h2 class="section-title">Delivery</h2>
+    <ul class="delivery-list">
+      <li class="delivery-list-item">
+        <p class="delivery-list-number">1</p>
+        <p class="delivery-list-description">
+          Choose your bouquet and make an order on website
+        </p>
+      </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-number">2</p>
+        <p class="delivery-list-description">
+          Wait for the call to clarify the details of the order. You can pay
+          online or to the courier
+        </p>
+      </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-number">3</p>
+        <p class="delivery-list-description">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
+      </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-number">4</p>
+        <p class="delivery-list-description">
+          Make someone happy or enjoy yourself
+        </p>
+      </li>
+    </ul>
+  </div>
+  <picture class="delivery-flowers-picture">
+    <source
+      srcset="/Grup09Proj/assets/img_desktop@1x-e4132684.jpg 1x, /Grup09Proj/assets/img_desktop@2x-f2235c51.jpg 2x"
+      media="(min-width: 1280px)"
+      type="image/jpeg"
+    />
+    <source
+      srcset="/Grup09Proj/assets/img_desktop@1x-c228b45f.webp 1x, /Grup09Proj/assets/img_desktop@1x-c228b45f.webp 2x"
+      media="(min-width: 1280px)"
+      type="image/webp"
+    />
+    <source
+      srcset="/Grup09Proj/assets/img_tab@1x-6d58c6c9.jpg 1x, /Grup09Proj/assets/img_tab@2x-30607532.jpg 2x"
+      media="(min-width: 768px)"
+      type="image/jpeg"
+    />
+    <source
+      srcset="/Grup09Proj/assets/img_tab@1x-f860eed5.webp 1x, /Grup09Proj/assets/img_tab@2x-990f60bb.webp 2x"
+      media="(min-width: 768px)"
+      type="image/webp"
+    />
+    <source
+      srcset="/Grup09Proj/assets/img_mob@1x-09b1266a.jpg 1x, /Grup09Proj/assets/img_mob@2x-ffa78d13.jpg 2x"
+      type="image/jpeg"
+    />
+    <source
+      srcset="/Grup09Proj/assets/img_mob@1x-be08b43c.webp 1x, /Grup09Proj/assets/img_mob@2x-ac6b25b8.webp 2x"
+      type="image/webp"
+    />
+    <img
+      loading="lazy"
+      class="delivery-flowers-picture"
+      src="/Grup09Proj/assets/img_desktop@1x-c228b45f.webp"
+      alt="Some beautiful flowers"
+    />
+  </picture>
+</section>
+
+      <section class="section" id="Blog">
+  <div class="conteiner">
+    <h2 class="section-title">Blog</h2>
+    <div class="list-blog responsive">
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img1_desktop@1x-680b0335.jpg 1x, /Grup09Proj/assets/img1_desktop@2x-6c5e7727.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/Grup09Proj/assets/img1_tab@1x-52235a80.jpg 1x, /Grup09Proj/assets/img1_tab@2x-134b6c84.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/Grup09Proj/assets/img1_mob@1x-02f8a938.jpg 1x, /Grup09Proj/assets/img1_mob@2x-ca786f17.jpg 2x"
+          />
+          <img loading="lazy" src="/Grup09Proj/assets/img1_mob@1x-02f8a938.jpg" alt="Flower" />
+        </picture>
+      </div>
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img2_desktop@1x-b6259323.jpg 1x, /Grup09Proj/assets/img2_desktop@2x-ea3a9101.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="data:image/jpeg;base64,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 1x, /Grup09Proj/assets/img2_tab@2x-5b6bb094.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIALUAiAMBIgACEQEDEQH/xAAyAAEAAgMBAQAAAAAAAAAAAAAABQYCAwQHAQEBAAMBAQAAAAAAAAAAAAAAAAEDBAIF/9oADAMBAAIQAxAAAACRHle2AAAAAAAAAAAAAAAAEgg1bcSJ+8nTn05dXHhym/sP3309I74AAAAAi4+yYc2w2vj05dMllzKXfsjdl1U3v5OvVnDqAAAAIzzz1LzLjVlP1DdTstc5UbrOPrGjKACASAA829J8/wCbYXk7NPHqYTcbbuqrWO/LAAAAAUG/UHnuHZ7q92n0ig+k25gnOAAAAAoF/pXEwnfHS9OnZd6nbNFITWAAAAAhpn5EeWyXIxTZbPVrTrkO4ACQQAAAoPDL4YqLNJGy8JAAAAAAU7P5ty0WoarwAAAAAAKlsMtFpGq8AAD/xAA+EAABAwICBgUIBwkAAAAAAAABAAIDBBEFIRIiMDFRYQYTQXKRIyQyM0BiccEUFSVCUoGxNDVUYGNzobLw/9oACAEBAAE/AP5HkZI70JS02yyBF+abW1ejnHE48rhfTqv+HZ4ptdVX1oWEciVHXRO9MFh5oEEAg3G0dfRdbfbJQvGiArouWqVG98ebHZcOxRVLH5O1XbSooHFxkgcATmWu3IziJwjnaYndmluPwO5HMI5IPXWcUyZ7RqvIQrZRvDSoJ2zNJAsRvGyfGyRpa9gc09hFwsSjfh0rXwOLYnfc3tBUWKRPHlBo8xmEHtcA5rgRxCcUx6BuqSIsYXEZu2eLwiWhkyzbrBOLmOy4qCrdA643do7FFOyaMOYclphu9UNMNASvGZzA4bSVmnFIz8TSPFTt1zzRv8iqWtfSSEEaTTvChxGidI0uL2gnO43KlrKSpFoJmusNw3ja17NGeVvB7m+BUvY7iEQXAFaPZyWAdZ9ZwBpNta/wttcVFqyo5SXUo1LfhcmsykHIEJo9XxuujdIG9dUEe439TtcXH2hUj/tytpdYPduFGzWHNpUTb5cwVQwiCkhZ7tz8TtcYP2jUfl+ijGuO7ZRsuYsstIhU0RMgHEgf522MfvCf4/JM9JqjZ6sHiqaPy8Q98f7bbH4SyrMnY9gPhko8nBQG9rqnYBUQ99v67bG6brqMvA1ozf8ALtW5ypnqlznh742zmhzS0i4IsVUx9XPIw/dcR4KJ1isIHWVA4NBO3xiPQr5xxN/FRjNYXSfR6YFw135n5Db48LV9+MYKwaFstZHpC4aC72DpCPPIj/S+ZWADzh/c9g6Q/tUX9r5lYAPLy9z2DpCPOIT7i6P+tl7mw//EACMRAAIBBAEDBQAAAAAAAAAAAAECAAMRIDEwEiFxMjRAQ1H/2gAIAQIBAT8A+Ixe5sxgqsNmLUU5lQY9MiXIiVG0DFvYXycRqfV5lKn09zvNtRYM21BBrOp6Yp7wazIuCI1xKZugPA4Jcr+mABQAOD7x54T7jH//xAAjEQABAwMEAgMAAAAAAAAAAAABAAIDESAhBBIwUTJDQEJh/9oACAEDAQE/APiCJqMbek6Mj9F7JSMHITTuFQiE5g6RpXF2mOSCnR4qFPuAGDS+E0eEDgKeQCNw7xfH5hB2CtQ6pF7TRwRcpDkcDXomvB9yOH2cPst//9k= 1x, data:image/jpeg;base64,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 2x"
+          />
+          <img loading="lazy" src="./img/blog/img2_mob@1x.jpg " alt="Flower" />
+        </picture>
+      </div>
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img3_desktop@1x-f9f7c829.jpg 1x, /Grup09Proj/assets/img3_desktop@2x-07b0471c.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/Grup09Proj/assets/img3_tab@1x-4e9c29f9.jpg 1x, /Grup09Proj/assets/img3_tab@2x-10cd48b4.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="data:image/jpeg;base64,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 1x, /Grup09Proj/assets/img3_mob@2x-31dde823.jpg 2x"
+          />
+          <img loading="lazy" src="data:image/jpeg;base64,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" alt="Flower" />
+        </picture>
+      </div>
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img4_desktop@1x-4021e5d6.jpg 1x, /Grup09Proj/assets/img4_desktop@2x-9166c7a8.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/Grup09Proj/assets/img4_tab@1x-5ba411fe.jpg 1x, /Grup09Proj/assets/img4_tab@2x-e985bec2.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="data:image/jpeg;base64,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 1x, /Grup09Proj/assets/img4_mob@2x-1cba8dda.jpg 2x"
+          />
+          <img loading="lazy" src="data:image/jpeg;base64,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" alt="Flower" />
+        </picture>
+      </div>
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img5_desktop@1x-3baff29c.jpg 1x, /Grup09Proj/assets/img5_desktop@2x-433e033f.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/Grup09Proj/assets/img5_tab@1x-0eaa28db.jpg 1x, /Grup09Proj/assets/img5_tab@2x-ed73896a.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/Grup09Proj/assets/img5_mob@1x-ba00cbaa.jpg 1x, /Grup09Proj/assets/img5_mob@2x-b7c881c2.jpg 2x"
+          />
+          <img loading="lazy" src="/Grup09Proj/assets/img5_mob@1x-ba00cbaa.jpg" alt="Flower" />
+        </picture>
+      </div>
+      <div class="list-item-blog">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="/Grup09Proj/assets/img6_desktop@1x-187977c7.jpg 1x, /Grup09Proj/assets/img6_desktop@2x-1e56d7a5.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/Grup09Proj/assets/img6_tab@1x-40734a99.jpg 1x, /Grup09Proj/assets/img6_tab@2x-d4c2c2e7.jpg 2x"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/Grup09Proj/assets/img6_mob@1x-6812c7c4.jpg 1x, /Grup09Proj/assets/img6_mob@2x-0601e133.jpg 2x"
+          />
+          <img loading="lazy" src="/Grup09Proj/assets/img6_mob@1x-6812c7c4.jpg" alt="Flower" />
+        </picture>
+      </div>
+    </div>
+
+    <p class="title-item-blog">Follow to our newsletter</p>
+    <button
+      type="button"
+      class="button button-blog js-open-modal"
+      data-modal="2"
+    >
+      Subscribe
+    </button>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <a class="footer-logo" href="#anemon">
+      <svg class="footer-icon-logo" width="73" Height="57">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#Logo-mobil"></use>
+      </svg>
+    </a>
+    <nav class="footer-nav">
+      <h3 class="footer-title">Navigation</h3>
+      <ul class="footer-nav-list footer-list">
+        <li class="footer-nav-item footer-item">
+          <a href="#anemon" class="footer-nav-link">Anemone</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#About" class="footer-nav-link">About us</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#store" class="footer-nav-link">Store</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#Delivery" class="footer-nav-link">Delivery</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-time">
+      <h3 class="footer-title">Opening times</h3>
+      <p class="footer-list">
+        Every day <br />
+        9:00 - 22:00
+      </p>
+    </div>
+    <address class="footer-contacts">
+      <p class="footer-title">Contacts</p>
+      <ul class="footer-contacts-list footer-list">
+        <li class="footer-contacts-item footer-item">
+          <a href="tel:+380631234567" class="footer-contacts-link"
+            >+38 063 123 45 67</a
+          >
+        </li>
+        <li class="footer-contacts-item footer-item">
+          <a
+            href="mailto:anemonestudio@example.com"
+            class="footer-contacts-link"
+            >anemonestudio<br class="footer-br" />@example.com</a
+          >
+        </li>
+        <li class="footer-contacts-item footer-item">
+          <a
+            href="https://goo.gl/maps/7NcAQSkzZBaRQcvv9"
+            class="footer-contacts-link"
+            target="_blank"
+            >Reitarska Street, 11 <br />
+            Kyiv, Ukraine</a
+          >
+        </li>
+      </ul>
+    </address>
+    <div class="footer-icons">
+      <ul class="footer-icons-list">
+        <li class="footer-icons-item footer-item">
+          <a href="" class="footer icons-link">
+            <svg class="footer-icon" width="28" Height="28">
+              <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icons-item footer-item">
+          <a href="" class="footer icons-link">
+            <svg class="footer-icon" width="28" Height="28">
+              <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <!-- /**
+  |============================
+  | BACKDROP
+  |============================
+*/ -->
+<div class="js-backdrop-modal">
+  <!-- Store Modal -->
+
+  <div class="modal-order-flowers modal" data-modal="1">
+    <button type="button" class="button-modal-close js-modal-close">
+      <svg class="icon-close-store">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="title-modal-flowers">Contact us</h3>
+    <p class="title-item-flower">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="form-flower">
+      <label for="name" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="name"
+            class="input-flower input"
+            placeholder="Your name"
+            type="text"
+            name="username"
+            minlength="3"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Name</span>
+        </span></label
+      >
+      <label for="email" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="email"
+            class="input-flower input"
+            type="email"
+            name="email"
+            title="Please enter your email"
+            placeholder="Your email"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Email</span>
+        </span>
+      </label>
+      <button type="submit" id="simulate"></button>
+      <button
+        type="button"
+        class="button-send-modal js-open-modal"
+        data-modal="3"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div class="subscribe-modal modal" data-modal="2">
+    <button class="close-button js-modal-close" type="button">
+      <svg class="modal-close-icon" width="18" height="18">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-bgc"></div>
+    <form class="subscribe-form">
+      <b class="modal-title">Follow&nbsp;to&nbsp;our&nbsp;newsletter</b>
+      <p class="modal-text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+
+      <label class="subscribe-formfield">
+        <span class="input-wrapper">
+          <input
+            class="subscribe-input input input-js"
+            type="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#success-logo"></use>
+          </svg>
+
+          <span class="label-name">Email</span>
+        </span>
+      </label>
+
+      <button class="subscribe-button button button-js" type="submit">
+        Subscribe
+      </button>
+    </form>
+  </div>
+
+  <div class="modal-thank modal" data-modal="3">
+    <button type="button" class="button-modal-close js-modal-close">
+      <svg class="icon-close-store">
+        <use href="/Grup09Proj/assets/icons-8ba3c3c3.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture class="modal-photo-thank">
+      <source
+        media="(min-width:720px)"
+        srcset="/Grup09Proj/assets/img_desktop-tablet@1x-9d789e4b.png 1x, /Grup09Proj/assets/img_desktop-tablet@1x-9d789e4b.png 2x"
+        type="image/png"
+        width="367"
+      />
+      <img
+        loading="lazy"
+        srcset="/Grup09Proj/assets/img_mob@1x-8ccbbfd9.png 1x, /Grup09Proj/assets/img_mob@2x-d9af1d23.png 2x"
+        src="/Grup09Proj/assets/img_mob@1x-8ccbbfd9.png"
+        alt="Flower"
+        width="188"
+      />
+    </picture>
+    <h3 class="title-thank">Thank you!</h3>
+    <p class="title-item-thank">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button type="button" class="button-continue button-modal-send">
+      Continue
+    </button>
+  </div>
+</div>
+
+
+    <!-- Base JS -->
+
+    
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- UIkit JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>
