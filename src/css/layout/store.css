@@ -117,13 +117,12 @@ width: 600px;
 .item-img {
 
 }
- /* a:active {
-    color: currentColor; /* Цвет активных ссылок */
-   /* }
+
+
   #second:hover, #second:focus {
-    color: currentColor; /* Цвет активных ссылок
-    /* text-decoration: none;
-   }*/
+    color: currentColor;
+     text-decoration: none;
+   }
 #second:hover, #second:focus {
 outline: 1 px solid;
 }
