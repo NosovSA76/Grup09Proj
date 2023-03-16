@@ -27,3 +27,8 @@ $('.responsive').slick({
     // instead of a settings object
   ],
 });
+const myElement = document.querySelector('.my-slick-next');
+
+setInterval(() => {
+  myElement.click();
+}, 3000);
